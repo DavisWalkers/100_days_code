@@ -79,16 +79,18 @@
             <li class="how-we-work__item"><a href="#" class="how-we-work__link">4 шаг</a></li>
           </ul>
         </nav>
-        <div class="how-we-work__column">
-          <h3 class="how-we-work__content-header">Проводим консультацию</h3>
-          <p class="how-we-work__description">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-          <div class="how-we-work__buttons">
-            <a href="#" type="button" class="btn how-we-work__more-link">Подробнее</a>
-            <a href="#" type="button" class="btn how-we-work__more-offer">Договор</a>
+        <div class="how-we-work__content">
+          <div class="how-we-work__column">
+            <h3 class="how-we-work__content-header">Проводим консультацию</h3>
+            <p class="how-we-work__description">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+            <div class="how-we-work__buttons">
+              <a href="#" type="button" class="btn how-we-work__more-link">Подробнее</a>
+              <a href="#" type="button" class="btn how-we-work__more-offer">Договор</a>
+            </div>
           </div>
-        </div>
-        <div class="how-we-work__column">
-          <img src="img/how-we-work.jpg" alt="Как мы работаем изображение" class="how-we-work__img">
+          <div class="how-we-work__column">
+            <img src="img/how-we-work.jpg" height="465" width="870" alt="Как мы работаем изображение" class="how-we-work__img">
+          </div>
         </div>
       </div>
     </section>
@@ -123,26 +125,28 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__column">
-        <div class="logo">
-          <a href="#" class="logo__link">
-            <img class="logo__img" src="img/logo-footer.png" height="72" width="224" alt="Логотип Евклид">
-          </a>
+        <div class="footer__column-top">
+          <div class="logo footer__logo">
+            <a href="#" class="logo__link">
+              <img class="logo__img" src="img/logo-footer.png" height="72" width="224" alt="Логотип Евклид">
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__link">О нас</li>
+              <li class="footer__link">Проекты</li>
+              <li class="footer__link">Отзывы</li>
+              <li class="footer__link">Договор оферты</li>
+              <li class="footer__link">Договор подряда</li>
+              <li class="footer__link">Конфиденциальность</li>
+              <li class="footer__link">Партнёрское соглашение</li>
+            </ul>
+          </nav>
         </div>
-        <nav class="footer__nav">
-          <ul class="footer__list">
-            <li class="footer__link">О нас</li>
-            <li class="footer__link">Проекты</li>
-            <li class="footer__link">Отзывы</li>
-            <li class="footer__link">Договор оферты</li>
-            <li class="footer__link">Договор подряда</li>
-            <li class="footer__link">Конфиденциальность</li>
-            <li class="footer__link">Партнёрское соглашение</li>
-          </ul>
-        </nav>
         <ul class="footer__social-list">
-          <li class="footer__social-item"><a class="footer__social-link" href="#">FB</a></li>
-          <li class="footer__social-item"><a class="footer__social-link" href="#">VK</a></li>
-          <li class="footer__social-item"><a class="footer__social-link" href="#">INST</a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="footer__social-icon footer__social-item-fb"></span></a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="footer__social-icon footer__social-item-vk"></span></a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="footer__social-icon footer__social-item-inst"></span></a></li>
         </ul>
       </div>
       <div class="footer__column">
@@ -150,10 +154,14 @@
           <h2 class="footer__form-header">Оставить заявку</h2>
           <input type="text" name="name" id="name" class="footer__input" placeholder="Фамилия, имя и отчество*" required>
           <input type="email" name="email" id="email" class="footer__input" placeholder="E-mail*" required>
-          <textarea class="footer__input-message" name="message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
-          <button type="submit" class="btn footer__submit">Отправить данные</button>
-          <input type="checkbox" name="confidential" id="confidential" class="footer__checkbox" checked>
-          <label for="confidential" class="footer__checkbox-label">Согласен на обработку данных</label>
+          <textarea class="footer__input-message" name="message" id="message" rows="6" placeholder="Сообщение"></textarea>
+          <div class="footer__form-bottom">
+            <button type="submit" class="btn footer__submit">Отправить данные</button>
+            <div class="footer__form-confidential">
+              <input type="checkbox" name="confidential" id="confidential" class="footer__checkbox" checked>
+              <label for="confidential" class="footer__checkbox-label">Согласен на обработку данных</label>
+            </div>
+          </div>
         </form>
       </div>
       <div class="footer__column">

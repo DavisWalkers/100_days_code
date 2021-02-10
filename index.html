@@ -7,14 +7,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Connaissance</title>
+  <script defer src="js/index.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="container header__container">
       <div class="logo">
         <a href="index.html" class="logo__link">
-          <!-- <img src="" alt="Logo Connaissance" class="logo__img"> -->
-          Connaissance
+          Portfolio Page
         </a>
       </div>
       <nav class="header__nav">
@@ -26,35 +26,50 @@
             <a href="https://vk.com/vosconnaissances" target="_blank" class="header__link">Blog</a>
           </li>
           <li class="header__item">
-            <a style="cursor: pointer;" class="header__link">About Us</a>
+            <a style="cursor: pointer;" class="header__link">Resume</a>
           </li>
         </ul>
       </nav>
+      <div class="burger" tabindex="0">
+        <svg class="burger__img" width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="30" height="3" fill="#333333"/>
+          <rect y="10" width="30" height="3" fill="#333333"/>
+          <rect y="20" width="30" height="3" fill="#333333"/>
+        </svg>          
+      </div>
+      <div class="menu">
+        <span class="menu__close-btn"></span>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#about-us" class="menu__link">Projects</a></li>
+          <li class="menu__item"><a href="#about-us" class="menu__link">Blog</a></li>
+          <li class="menu__item"><a href="#about-us" class="menu__link">Resume</a></li>
+        </ul>
+      </div>
     </div>
   </header> 
   <main class="main">
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content">
-          <h1 class="section-header hero__header">Knowledge, Art, and Power</h1>
-          <p class="hero__description">Our main goal is to develop websites with the latest knowledge from the web industry, competence, and creativity.</p>
-          <a href="#contact-us" class="btn hero__btn">Contact Us</a>
+          <h1 class="section-header hero__header">I'm a web developer</h1>
+          <p class="hero__description">My main goal is to develop websites with the latest knowledge from the web industry, competence, and creativity.</p>
+          <a href="#contact-us" class="btn hero__btn">Contact Me</a>
         </div>
       </div>
     </section>
     <section class="about-us">
       <div class="container about-us__container">
         <a name="about-us"></a>
-        <h2 class="section-header about-us__header">Our Projects</h2>
+        <h2 class="section-header about-us__header">My Projects</h2>
         <ul class="about-us__list">
           <li class="about-us__item">
             <div class="card">
-              <div class="card__header">
+              <div class="card__image-column">
                 <img src="img/card-img-1.png" alt="Euclid Site" class="card__img">
               </div>
-              <div class="card__footer">
+              <div class="card__content">
                 <h3 class="card__heading">Euclid - Building Company</h3>
-                <a href="euclid/index.html" class="card__link">See More <span class="card__arrow-img"></span></a>
+                <a href="euclid/index.html" class="card__link">See More</a>
               </div>
             </div>
           </li>
@@ -67,18 +82,17 @@
       <div class="footer__header">
         <ul class="footer__header-left-list">
           <li class="footer__header-item">
-            <a href="https://vk.com/vosconnaissances" class="footer__header-link">Blog</a>
+            <a href="https://vk.com/vosconnaissances" target="_blank" class="footer__header-link">Blog</a>
           </li>
         </ul>
-        <div class="logo">
-          <a href="" class="logo__link">
-            <!-- <img src="" alt="Logo Connaissance" class="logo__img"> -->
-            Connaissance
+        <div class="footer__logo logo">
+          <a href="#" class="logo__link">
+            Portfolio Page
           </a>
         </div>
         <ul class="footer__header-right-list">
           <li class="footer__header-item">
-            <a style="cursor: pointer;" class="footer__header-link">About Us</a>
+            <a style="cursor: pointer;" target="_blank" class="footer__header-link">Resume</a>
           </li>
         </ul>
       </div>
